@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home">Portfolio</a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div>
+          <p class="eyebrow">Full-Stack Developer</p>
+          <h1 id="profile-name">K V N SURYA KIRAN</h1>
+          <p class="hero-copy" id="profile-summary">
+            I build responsive web applications with clean interfaces, reliable APIs, and practical database design.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">View Projects</a>
+            <a class="button secondary" href="#contact">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <div><span class="metric">3+</span><span>Projects</span></div>
+          <div><span class="metric">9</span><span>Core Skills</span></div>
+          <div><span class="metric">100%</span><span>Responsive</span></div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <p class="eyebrow">About</p>
+        <h2>K V N SURYA KIRAN</h2>
+        <div class="about-layout">
+          <div class="portrait">YN</div>
+          <div>
+            <p>
+              I am a web developer focused on building practical full-stack applications.
+              My work combines frontend layouts, backend APIs, and database-backed features.
+            </p>
+            <div class="info-grid">
+              <span><strong>Role</strong><br /><span id="profile-role">Full-Stack Developer</span></span>
+              <span><strong>Location</strong><br /><span id="profile-location">India</span></span>
+              <span><strong>Email</strong><br /><span id="profile-email">your.email@example.com</span></span>
+              <span><strong>Phone</strong><br /><span id="profile-phone">+91 98765 43210</span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alternate" id="skills">
+        <p class="eyebrow">Skills</p>
+        <h2>Technical Stack</h2>
+        <div class="skills-list" id="skills-list"></div>
+      </section>
+
+      <section class="section" id="projects">
+        <p class="eyebrow">Projects</p>
+        <h2>Featured Work</h2>
+        <div class="project-grid" id="project-grid">
+          <p>Loading projects...</p>
+        </div>
+      </section>
+         <div id="projects-container"></div>
+      <section class="section contact-section" id="contact">
+        <p class="eyebrow">Contact</p>
+        <h2>Send a Message</h2>
+        <form class="contact-form" id="contact-form">
+          <label>Name <input type="text" name="name" required /></label>
+          <label>Email <input type="email" name="email" required /></label>
+          <label>Message <textarea name="message" rows="5" required></textarea></label>
+          <button class="button primary" type="submit">Submit Message</button>
+          <p id="form-status"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Personal Portfolio | Built with HTML, CSS, JavaScript, Express, and MongoDB</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
